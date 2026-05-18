@@ -9,7 +9,7 @@ void primerafunction() {
 }
 
 
-void segundafunction(string nombre, thread&& primerhilo) {
+void segundafunction(string nombre, thread primerhilo) {
     cout << "el nombre es: " << nombre << endl;
 
     if (primerhilo.joinable()) {
@@ -22,9 +22,9 @@ void segundafunction(string nombre, thread&& primerhilo) {
 int main() {
 
     thread t1(primerafunction);
-    string minombre = "ricardo";
+    string minnombre = "ricardo";
 
-    thread t2(segundafunction, minombre, std::move(t1));
+    thread t2(segundafunction, minnombre, std::move(t1));
     t2.join();
 
     return 0;

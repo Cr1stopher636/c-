@@ -1,7 +1,7 @@
 // punteros
 #include <iostream>
 #include <cstdlib>
-#include <stdio.h>
+#include <stdio.h> // para imprimir con printf("%d")
 using namespace std;
 
 

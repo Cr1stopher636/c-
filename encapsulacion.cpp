@@ -3,11 +3,11 @@
 
 using namespace std;
 
-class Persona {
+class Animal {
     private:
 
     string nombre;
-    int edad;
+    string especie;
 
 
 
@@ -25,12 +25,12 @@ class Persona {
     }
 
 
-    void setEdad(int nuevaEdad) {
-        edad = nuevaEdad;
+    void setEspecie(string nuevaEspecie) {
+        especie = nuevaEspecie;
     }
 
-    int getEdad() {
-        return edad;
+    string getEspecie() {
+        return especie;
     }
 };
 
@@ -38,13 +38,13 @@ class Persona {
 
 int main() {
 
-    Persona p1;
+    Animal a1;
 
-    p1.setNombre("Ricardo");
-    p1.setEdad(23);
+    a1.setNombre("Dragon de komodo");
+    a1.setEspecie("Reptil");
 
-    cout << "El nombre es: " << p1.getNombre() << endl;
-    cout << "La edad es: " << p1.getEdad() << endl;
+    cout << "El nombre del animal es: " << a1.getNombre() << endl;
+    cout << "La especie es: " << a1.getEspecie() << endl;
 
     return 0;
 }

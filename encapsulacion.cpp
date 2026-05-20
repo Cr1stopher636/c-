@@ -13,6 +13,9 @@ class Persona {
 
     public:
 
+    // set() guarda el valor 
+    // get() devuelve el valor guardado dento del objeto nombre
+
     void setNombre(string nuevoNombre) {
         nombre = nuevoNombre;
     }

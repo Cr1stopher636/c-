@@ -12,7 +12,7 @@ class Persona {
 
 
 
-    Persona(string _nombre, int edad) {
+    Persona(string nombre, int edad) {
         nombre = nombre;
         edad = edad;
     }
@@ -22,6 +22,7 @@ class Persona {
         cout << "Hola, mi nombre es " << nombre << " y tengo " << edad << "años." << endl;
     }
 }; // <---------- Punto y coma en la clase
+
 
 
 // uso de la clase en el programa principal

@@ -20,15 +20,28 @@ class Persona {
     string getNombre() {
         return nombre;
     }
+
+
+    void setEdad(int nuevaEdad) {
+        edad = nuevaEdad;
+    }
+
+    int getEdad() {
+        return edad;
+    }
 };
+
+
 
 int main() {
 
     Persona p1;
 
     p1.setNombre("Ricardo");
+    p1.setEdad(23);
 
-    cout << p1.getNombre() << endl;
+    cout << "El nombre es: " << p1.getNombre() << endl;
+    cout << "La edad es: " << p1.getEdad() << endl;
 
     return 0;
 }

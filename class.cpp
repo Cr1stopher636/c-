@@ -24,9 +24,7 @@ int main() {
 
     cout << persona1.nombre << endl;
     cout << persona1.edad << endl;
-    
 
+    return 0;
 
-    
-   
 }

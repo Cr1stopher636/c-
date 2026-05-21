@@ -10,20 +10,16 @@ class Persona {
     int edad;
 
 
-    Persona() { // Constructor
-        nombre = "ricardo";
-        edad = 23;
-
+    Persona(string nombre, int edad) { // Constructor
+        cout << "Te llamas: " << nombre << " y tienes " << edad << " años." << endl;
+       
+        
     }
 };
 
 
 int main() {
-
-    Persona persona1;
-
-    cout << persona1.nombre << endl;
-    cout << persona1.edad << endl;
+    Persona objeto1("Ricardo", 23);
 
     return 0;
 

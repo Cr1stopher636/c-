@@ -10,12 +10,21 @@ class Persona {
     string nombre;
     int edad;
 
+    double salario;
+    bool enRelacion;
 
 
-    // Persona() {
-    //     nombre = "";
-    //     edad = 0;
-    // }
+    Persona(double salario, bool enRelacion) {
+        this-> salario = salario;
+        this-> enRelacion = enRelacion;
+    }
+
+
+
+    Persona() {
+        nombre = "";
+        edad = 0;
+    }
 
 
     Persona(string nombre, int edad) {
@@ -33,20 +42,20 @@ class Persona {
 
 // uso de la clase en el programa principal
 int main() {
-
-   
+    Persona objeto;
+    Persona objeto2(250.30, false);
     Persona usuario1("Carlos", 23);
     Persona usuario2("juan", 20);
     
 
 
     // Accedemos a sus metodos usando el operador (.)
-    usuario1.saludar();
-    usuario2.saludar();
-
- 
-
-    
+    // usuario1.saludar();
+    // usuario2.saludar();
+    // objeto.saludar();
+    cout << boolalpha; // Para imprimir True y False
+    cout << objeto2.enRelacion << endl;
+   
 
     return 0;
 }

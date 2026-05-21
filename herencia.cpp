@@ -22,9 +22,13 @@ class ClassB : public ClassA {
 };
 
 
+
 class ClassC : public ClassB {
 
+   
+
 };
+
 
 
 int main() {
@@ -34,7 +38,6 @@ int main() {
 
     cout << "Prueba de herencia de clase c " << endl;
     cout << "\n";
-
 
 
     c1.metodoA();

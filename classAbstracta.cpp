@@ -10,7 +10,9 @@ class Vehiculo{
     virtual void avanzar() = 0; 
 
     // Destructor virtual (buena práctica indispensable en herencia)
-    virtual ~Vehiculo() {} 
+    virtual ~Vehiculo() = default;
+        
+
     
 };
 

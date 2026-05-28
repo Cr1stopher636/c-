@@ -12,5 +12,7 @@ int main() {
 
     cout << "ya pasaron 3 segundos " << endl;
 
+    getchar();
+
     return 0;
 }

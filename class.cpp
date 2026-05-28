@@ -4,22 +4,39 @@
 using namespace std;
 
 class Persona {
-    public:
+    private:
 
     string nombre;
     int edad;
+    
 
+    public:
 
-    Persona(string nombre, int edad) { // Constructor
-        cout << "Te llamas: " << nombre << " y tienes " << edad << " años." << endl;
-       
-        
+    Persona(string nombre, int edad) : nombre(nombre), edad(edad) { // Constructor
+        // el cuerpo del constructor pued quedar vacio
     }
+
+    void function() {
+        cout << "hola" << endl;
+    }
+
+    string namefunction() {
+        cout << "te llamas: " << nombre << " y tienes: " << edad << " de edad" << endl;
+    }
+
+
+
+
 };
 
 
+
 int main() {
-    Persona objeto1("Ricardo", 23);
+    Persona p1("jose", 23);
+    p1.namefunction();
+
+   
+    
 
     return 0;
 

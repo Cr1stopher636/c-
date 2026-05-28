@@ -22,8 +22,8 @@ class Persona {
 
 
     Persona() {
-        nombre = "";
-        edad = 0;
+        nombre = "ricardo";
+        edad = 23;
     }
 
 
@@ -52,9 +52,9 @@ int main() {
     // Accedemos a sus metodos usando el operador (.)
     // usuario1.saludar();
     // usuario2.saludar();
-    // objeto.saludar();
-    cout << boolalpha; // Para imprimir True y False
-    cout << objeto2.enRelacion << endl;
+    objeto.saludar();
+    // cout << boolalpha; // Para imprimir True y False
+    // cout << objeto2.enRelacion << endl;
    
 
     return 0;

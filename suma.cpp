@@ -17,7 +17,7 @@ int main() {
 
     int resultado = num1 + num2;
 
-    cout << "la suma es: " << resultado << endl;
+    cout << "El resultado es: " << resultado << endl;
 
     return 0;
 

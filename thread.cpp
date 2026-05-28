@@ -3,6 +3,10 @@
 #include <string>
 using namespace std;
 
+using std::move;
+
+
+
 // Funcion del primer hilo
 void primerafunction() {
     cout << "Mensaje del primer hilo" << endl;
@@ -26,7 +30,7 @@ int main() {
     int edADUser = 23;
 
     //forma correcta de usar move() para transferir el hilo a la funcion
-    thread t2(segundafunction, edADUser, std::move(t1));
+    thread t2(segundafunction, edADUser, move(t1));
 
     // esperamos que el segundo hilo temrine
     t2.join();

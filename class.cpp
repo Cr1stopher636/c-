@@ -12,31 +12,21 @@ class Persona {
 
     public:
 
-    Persona(string nombre, int edad) : nombre(nombre), edad(edad) { // Constructor
-        // el cuerpo del constructor pued quedar vacio
+    Persona() { // Constructor
+        nombre = "Bentley Bentayga";
+        edad = 0;
     }
 
-    void function() {
-        cout << "hola" << endl;
+    void MetodoPublico() {
+        cout << "Primer valor: " << nombre << endl;
     }
-
-    string namefunction() {
-        cout << "te llamas: " << nombre << " y tienes: " << edad << " de edad" << endl;
-    }
-
-
-
-
 };
 
 
 
 int main() {
-    Persona p1("jose", 23);
-    p1.namefunction();
-
-   
-    
+    Persona p1;
+    p1.MetodoPublico();
 
     return 0;
 

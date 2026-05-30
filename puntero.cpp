@@ -5,17 +5,17 @@
 using namespace std;
 
 int main() {
-    int numero = 10;
-    int *miPunteronumero;
+    string nombre = "Pedro";
+    string *miPunteroNombre;
 
-    miPunteronumero = &numero;
+    miPunteroNombre = &nombre;
 
-    *miPunteronumero = 100;
-    cout << "El nuevo valor es: " << *miPunteronumero << endl;
+    // *miPunteroNombre = "Mercedes benz GLE63s";
+    // cout << "El nuevo valor es: " << *miPunteroNombre << endl;
 
-    // cout <<  "Esta es la direccion en memoria: " << miPunteronumero << endl;
-    // cout << "Este es el valor almacenado en la direccion en memoria: " << *miPunteronumero << endl;
-    getchar();
+    // cout <<  "Esta es la direccion en memoria: " << miPunteroNombre << endl;
+    cout << "Este es el valor almacenado: " << *miPunteroNombre << endl;
+    // getchar();
 
     return 0;
 

@@ -4,45 +4,48 @@
 using namespace std;
 
 
-class ClassA {
-    public:
+class Vehiculo {
+    private:
     void metodoA() {
-        cout << "Mensaje de la clase A" << endl;
+        cout << "Vehiculo Padre" << endl;
+    }
+
+    public:
+    void publicMethod() {
+    metodoA();
     }
 };
 
 
-
-
-class ClassB : public ClassA {
+class Mercedes : public Vehiculo {
     public:
     void metodoB() {
-        cout << "Mensaje de la clase B" << endl;
+        cout << "Mercedes - Benz" << endl;
     }
 };
 
 
 
-class ClassC : public ClassB {
-
-   
-
+class Chrysler : public Mercedes {
+    void metodoC() {
+        cout << "Chrysler" << endl;
+    }
 };
 
 
 
 int main() {
-    ClassC c1;
-
-    cout << "\n";
-
-    cout << "Prueba de herencia de clase c " << endl;
-    cout << "\n";
+    Vehiculo v1;
+    v1.publicMethod();
 
 
-    c1.metodoA();
+    Mercedes m1;
+    m1.metodoB();
 
-    c1.metodoB();
+    
+    // cout << "\n";
+    // cout << "Prueba de herencia de clase c " << endl;
+    // cout << "\n";
 
     return 0;
 }

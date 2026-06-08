@@ -29,7 +29,6 @@ class Animal {
     Animal(string nombre, int edad) {
         cout << "El animal es un " << nombre << " y tiene " << edad << " años de edad" << endl;
     }
-
 };
 
 
